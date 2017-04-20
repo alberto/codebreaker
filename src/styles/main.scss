@@ -1,0 +1,119 @@
+.board {
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid #333;
+  display: inline-block;
+  padding: 10px;
+}
+
+.board-row {
+  padding: 10px;
+
+  &.is-active {
+    box-shadow: 0 0 2px 1px red;
+  }
+}
+
+.code-hole {
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+
+  & + & {
+    margin-left: 20px;
+  }
+
+  &.is-active {
+    box-shadow: 0 0 2px 1px red;
+  }
+}
+
+.code-pegs {
+  padding: 10px 0;
+}
+
+.code-peg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #333;
+  cursor: pointer;
+
+  & + & {
+    margin-left: 10px;
+  }
+
+  &.is-selected {
+    opacity: .5;
+    cursor: default;
+  }
+}
+
+.code-peg--1 {
+  background-color: red;
+}
+
+.code-peg--2 {
+  background-color: green;
+}
+
+.code-peg--3 {
+  background-color: blue;
+}
+
+.code-peg--4 {
+  background-color: black;
+}
+
+.code-peg--5 {
+  background-color: yellow;
+}
+
+.code-peg--6 {
+  background-color: brown;
+}
+
+.code-peg--7 {
+  background-color: orange;
+}
+
+.code-peg--8 {
+  background-color: white;
+}
+
+.code-slot {
+  display: inline-block;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+
+.key-slot {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.key-peg {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  float: left;
+  margin: 5px;
+  background-color: #eee;
+
+  &:nth-child(3n) {
+    clear: left;
+  }
+}
+
+.key-peg--match {
+  background-color: #333;
+}
+
+.key-peg--partial-match {
+  background-color: #fff;
+  border: 1px solid #333;
+}
